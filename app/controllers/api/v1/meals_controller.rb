@@ -18,7 +18,7 @@ class Api::V1::MealsController < ApplicationController
   # POST /meals
   # POST /meals.json
   def create
-    @meal = Meal.new(meal_params)
+    @meal = Meal.create(meal_params)
 
     if @meal.save
       render :show, status: :created, location: @meal
@@ -51,6 +51,6 @@ class Api::V1::MealsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def meal_params
-      params.fetch(:meal, {})
+      params.require(:meal).permit(:title, :meal_time, :description)
     end
 end
