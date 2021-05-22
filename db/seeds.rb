@@ -12,6 +12,6 @@ Meal.create(title: "In n Out CheeseBurgers", description: "Best burger ever!", m
 Meal.create(title: "Spaghetti", description: "Spaghetti is one of the greatest dishes you could ever taste", meal_time: "Dinner")
 Meal.create(title: "Ramen", description: "Ramen is forever my favorite!", meal_time: "Lunch")
 
-Comment.create(comment: "WOW! I love making comments", meal_id: 5)
-Comment.create(comment: "Love this!", meal_id: 5)
-Comment.create(comment: "Amazing!", meal_id: 4)
+Comment.create(comment: "WOW! I love making comments")
+Comment.create(comment: "Love this!")
+Comment.create(comment: "Amazing!")
