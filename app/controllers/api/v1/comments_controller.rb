@@ -11,12 +11,13 @@ class Api::V1::CommentsController < ApplicationController
     def show
       render json: @comment, status: 200
     end
-
+ 
     def create
-      @comment = Comment.create(comment: params[:comment])
+      @comment = Comment.create(comment: params[:comment][:comment], meal_id: params[:meal_id])
   
       if @comment.save
-        render :show, status: :created, location: @comment
+        
+        render json: @comment, status: :created
       else
         render json: @comment.errors, status: :unprocessable_entity
       end
