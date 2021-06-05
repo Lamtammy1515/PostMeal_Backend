@@ -21,7 +21,7 @@ class Api::V1::MealsController < ApplicationController
     @meal = Meal.create(meal_params)
 
     if @meal.save
-      render :show, status: :created, location: @meal
+      render json: @meal, status: :created
     else
       render json: @meal.errors, status: :unprocessable_entity
     end
@@ -40,7 +40,9 @@ class Api::V1::MealsController < ApplicationController
   # DELETE /meals/1
   # DELETE /meals/1.json
   def destroy
+    @meal = Meal.find(params[:id])
     @meal.destroy
+
   end
 
   private
@@ -51,6 +53,6 @@ class Api::V1::MealsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def meal_params
-      params.require(:meal).permit(:title, :meal_time, :description)
+      params.require(:meal).permit(:title, :meal_time, :description, :id)
     end
 end
