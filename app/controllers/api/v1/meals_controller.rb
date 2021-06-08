@@ -42,6 +42,7 @@ class Api::V1::MealsController < ApplicationController
   def destroy
     @meal = Meal.find(params[:id])
     @meal.destroy
+    
 
   end
 
