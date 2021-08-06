@@ -32,7 +32,9 @@ class Api::V1::CommentsController < ApplicationController
     end
 
     def destroy
+      @comment = Comment.find(params[:id])
       @comment.destroy
+      render json: {id: params[:id], msg: "DELETED"}
     end
   
     private
