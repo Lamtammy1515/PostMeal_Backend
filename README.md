@@ -24,8 +24,8 @@ rails s
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-[https://github.com/Lamtammy1515/PostMeal_Backend]
-(https://github.com/Lamtammy1515/PostMeal_Backend)
+https://github.com/Lamtammy1515/PostMeal_Backend
+
 
 ## License
 [MIT](https://github.com/Lamtammy1515/PostMeal_Client/blob/main/LICENSE.md)
