@@ -1,24 +1,29 @@
-# README
+# Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails is an open-source web application framework that is written in ruby. 
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Clone this repo. 
 
-* System dependencies
+In your terminal, cd into postmeal-backend.
 
-* Configuration
+Run "bundle install" in your terminal.
+```bash
+bundle install
+```
 
-* Database creation
+Run "rails s" then open your browser to
+[http://localhost:3000/api/v1/meals](http://localhost:3000/api/v1/meals)
 
-* Database initialization
+```bash
+rails s
+```
 
-* How to run the test suite
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* Services (job queues, cache servers, search engines, etc.)
+Please make sure to update tests as appropriate.
 
-* Deployment instructions
-
-* ...
+## License
+[MIT](https://github.com/Lamtammy1515/PostMeal_Client/blob/main/LICENSE.md)
