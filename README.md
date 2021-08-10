@@ -7,6 +7,9 @@ Rails is an open-source web application framework that is written in ruby.
 Clone this repo. 
 
 In your terminal, cd into postmeal-backend.
+```bash
+cd postmeal-backend
+```
 
 Run "bundle install" in your terminal.
 ```bash
