@@ -2,6 +2,7 @@
 The Post-Meal app is a place for everyone who loves food. 🍣 🍱  Users can post their meal experiences and read up on what others have posted about their meal experiences. They are also welcome to leave comments on posts as well! This single page application was created using Ruby on Rails as an API on the backend and React-Redux in the frontend which is responsible for rendering & updating the DOM by making fetch requests to communicate with the Rails API in the backend.
 
 [DEMO](https://youtu.be/gKTd0mx5_no)
+
 [BLOG](https://lamtammy1515.github.io/react_lifecycle_methods)
 
 ## Installation
